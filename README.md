@@ -8,7 +8,7 @@ API documentation is available at <https://docs.doppler.com/reference/api>.
 
 ## Usage
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](TODO)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/typescript-example-using-sdk-built-with-fern-axwhfz?file=app.ts&view=editor)
 
 ```typescript
 import { TODO } from "TODO";
