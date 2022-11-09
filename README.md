@@ -11,9 +11,22 @@ API documentation is available at <https://docs.doppler.com/reference/api>.
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/typescript-example-using-sdk-built-with-fern-axwhfz?file=app.ts&view=editor)
 
 ```typescript
-import { TODO } from "TODO";
+const client = new DopplerApiClient({
+  environment: Environment.Production,
+  auth: {
+    credentials: {
+      username: 'YOUR_USERNAME',
+      password: 'YOUR_PASSWORD',
+    },
+  },
+});
 
-const TODO
+const response = await client.projects.create({
+  name: 'my-project',
+  description: 'Hello, World!',
+});
+
+console.log('Received response from Doppler!', response);
 ```
 
 ## Beta status
